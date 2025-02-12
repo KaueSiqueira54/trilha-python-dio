@@ -170,7 +170,7 @@ class Historico:
 
     # TODO: filtrar todas as transações realizadas no dia
     def transacoes_do_dia(self):
-        pass
+        
 
 
 class Transacao(ABC):

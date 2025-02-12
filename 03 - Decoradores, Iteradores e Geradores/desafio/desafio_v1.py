@@ -153,8 +153,8 @@ class Transacao(ABC):
     @abstractproperty
     def valor(self):
         pass
-
-    @abstractclassmethod
+    
+    @abstractproperty
     def registrar(self, conta):
         pass
 
@@ -190,7 +190,15 @@ class Deposito(Transacao):
 
 
 def log_transacao(func):
-    pass
+    if log_transacao == depositar:
+        hora = datetime.now
+        print("Deposito realizado")
+        print(hora)
+    elif log_transacao == sacar: 
+        hora = datetime.now
+        print("Saque realizado")
+        print(hora)
+        
 
 
 def menu():
